@@ -1,8 +1,15 @@
 #include<iostream>
-using namespace std;
-class SimpleFox {
+using namespace std; 
+int main () {
 
-public:
-    Run(int run) { return run; }
-    ~Run() {}
-};
+    int *pX = NULL;
+
+    int x = 7;
+    
+    pX = &x;
+
+    cout << "X: " << x << "\n";
+    cout << "pX: " << pX << "\n";    
+
+    return 0;
+}
