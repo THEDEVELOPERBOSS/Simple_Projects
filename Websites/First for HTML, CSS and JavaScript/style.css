@@ -1,0 +1,20 @@
+p{
+    color:white;
+    background: red;
+    font-style:italic;
+}
+
+.box{              /* Having the taught is how you make it only apply to the classes and a # will make it apply to id's only */     
+    width:100px;
+    height:100px;
+    background: green;
+    margin:10px;
+    padding:10px; /* the padding will be inside of the box */
+    border:2px solid red; 
+}
+div{
+    width:50px;
+    height:75px;
+    background:orange;
+    /* float:left;  makes them horizantly aligned instead of vertically*/
+}
