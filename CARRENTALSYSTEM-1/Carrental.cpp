@@ -6,40 +6,43 @@ using namespace std;
 
 int main() {
 	
-	char choiceone = 'd';
-	char choicetwo = 'z';
+	string choiceone;
+	string choicetwo;
 while (true) {
 	 cout << "Type R to go back to the begining at any time\n";
 	 cout << "Are you are customer or employee?\n Type 'c' for customer and 'e' for employee\n";
-	 cin >> choiceone; 
-		switch(choiceone) {
-
-			case 'e':
+	 getline (cin, choiceone);
+		if (choiceone == "e")
+		{
 			cout << submenue();
-			break;
-			case 'c':
+			
+		}
+		else if (choiceone == "c"){
 			cout << "Are returning a car or renting a car?\n Type a for returning a car and b for renting a car.\n";
-			cin >> choicetwo;
-				switch (choicetwo)
+			getline (cin, choicetwo);
+				if(choicetwo == "b")
 				{
-				case 'a':
-				submenure();
-				break;
-				default:
-				cout << "That is not a valid letter";
-				break;
+					submenure();
 				}
-			break;
-			default:
-			cout << "That is not valid\n";
-			break;
+				else if(choicetwo == "a")
+				{
+					submenurn();
+				}
+				else {
+					cout << "That is not a valid letter";
+				}
+		}
+			else
+			{
+				cout << "Please try again";
+			}
 		}
 		
 		cout << "Goodbye\n";
 		
 
 	}
-}
+
 
 	 
 	 
