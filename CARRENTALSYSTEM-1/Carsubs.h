@@ -70,7 +70,7 @@ using namespace std;
   string Name; // this is so I don't have to make an if thing to check the name every time
   string NameR; // this will allow me to set the name back to what it was before
   string caroneFN = caroneB + caroneN; // these are the full names of the car
-  string cartwoFN = cartwoB + cartwoN;
+  string cartwoFN = cartwoB + cartwoN; // test to see if this works as expected
 char submenurn() {
 
   cout << "What is the car that you are returning?\n";
